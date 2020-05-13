@@ -143,4 +143,8 @@ public class BidInfoServiceImpl implements BidInfoService {
         }
         return investList;
     }
+
+  public static void main(String[] args) {
+        
+    }
 }
