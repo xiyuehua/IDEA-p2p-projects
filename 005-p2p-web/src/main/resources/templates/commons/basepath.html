@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" th:inline="javascript">
+    var basePath = [[${#httpServletRequest.getScheme()+ "://" + #httpServletRequest.getServerName() + ":" + #httpServletRequest.getServerPort()+#httpServletRequest.getContextPath()}]];
+
+    var requestURLAndQueryString = [[${#httpServletRequest.requestURL + "?" + #httpServletRequest.queryString}]];
+
+    $(function () {
+        $("#loginPageBtn").on("click",function () {
+            var loginPageUrl = $("#localPageUrl").val();
+            window.location.href = basePath + "/loan/page/login?localPageUrl="+loginPageUrl;
+        });
+    });
+</script>
+<input type="hidden" id="localPageUrl" th:value="${#strings.replace(#httpServletRequest.requestURL + '?' + #httpServletRequest.queryString,'?null','')}"/>
+</body>
+</html>
