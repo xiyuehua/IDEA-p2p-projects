@@ -22,7 +22,7 @@
         <zkclient.vesion>0.10</zkclient.vesion>
         <dubbo-spring-boot-starter-version>2.0.0</dubbo-spring-boot-starter-version>
         <mybatis-spring-boot-starter-version>2.0.0</mybatis-spring-boot-starter-version>
-        <httpclient.version>4.5.3</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <fastjson.version>1.2.36</fastjson.version>
         <dom4j.version>2.1.0</dom4j.version>
         <commons-logging-vesion>1.1.1</commons-logging-vesion>
